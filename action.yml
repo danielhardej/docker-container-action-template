@@ -1,0 +1,27 @@
+name: 'Docker Container Action Template'
+description: 'A basic Docker container action template using Alpine Linux'
+author: 'danielhardej'
+
+branding:
+  icon: 'package'
+  color: 'blue'
+
+inputs:
+  name:
+    description: 'Name to greet'
+    required: true
+    default: 'World'
+  message:
+    description: 'Custom message to display'
+    required: false
+    default: 'Hello'
+
+outputs:
+  greeting:
+    description: 'The greeting message that was generated'
+  time:
+    description: 'The time when the action was executed'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
