@@ -99,8 +99,8 @@ docker run -e INPUT_NAME="Test User" -e INPUT_MESSAGE="Hi there" docker-action-t
 ## Technical Details
 
 - **Base Image**: Alpine Linux 3.10
-- **Runtime**: Bash shell
-- **Dependencies**: bash, git, curl, jq
+- **Runtime**: POSIX shell (sh)
+- **Dependencies**: Alpine Linux 3.10 base packages only
 - **Entry Point**: `/entrypoint.sh`
 
 ## Contributing
